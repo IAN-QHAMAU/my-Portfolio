@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ian's learning journey - A data science student's living lab notebook">
+    <title>Ian's Learning Lab | UON Data Science</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#intro" class="nav-logo">Ian's Lab</a>
+            <ul class="nav-menu">
+                <li><a href="#intro" class="nav-link">Thinking</a></li>
+                <li><a href="#timeline" class="nav-link">Journey</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#ai-insights" class="nav-link">AI Insights</a></li>
+                <li><a href="#tools" class="nav-link">Tools</a></li>
+                <li><a href="#curiosity" class="nav-link">Curiosity</a></li>
+                <li><a href="#contact" class="nav-link">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero / Thinking-First Intro -->
+    <section id="intro" class="section intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <p class="intro-label">First-Year Data Science Student • UON</p>
+                <h1 class="intro-title">Hi, I'm Ian</h1>
+                <div class="intro-text">
+                    <p class="lead">I'm not here to impress you with years of experience—I don't have them yet. Instead, I want to show you how I think, how I learn, and how I'm building a foundation in data science and AI.</p>
+                    
+                    <p>This isn't a résumé. Think of it as a living lab notebook—a space where I document my learning process, reflect on challenges, and share the questions that keep me curious. First semester just wrapped, and I'm learning to think computationally, understand data structures, and grasp the fundamentals of AI.</p>
+                    
+                    <div class="thinking-card">
+                        <h3>How I Learn</h3>
+                        <ul class="thinking-list">
+                            <li><strong>Question-First:</strong> I start with "why" before "how"</li>
+                            <li><strong>Build to Understand:</strong> Theory clicks when I implement it</li>
+                            <li><strong>Reflect Always:</strong> Every mistake is a learning artifact</li>
+                            <li><strong>Connect Ideas:</strong> I look for patterns across concepts</li>
+                        </ul>
+                    </div>
+
+                    <p class="intro-emphasis">I'm here to learn in public and show my thinking process, not just finished products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Timeline -->
+    <section id="timeline" class="section timeline-section">
+        <div class="container">
+            <h2 class="section-title">Learning Timeline</h2>
+            <p class="section-subtitle">My first semester journey in data science and AI</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Week 1-2</span>
+                        <h3>Getting Started</h3>
+                        <p>Orientation to programming. Python basics felt awkward at first—syntax errors everywhere. Learned that debugging is more important than writing perfect code the first time.</p>
+                        <p class="reflection">💭 Reflection: The hardest part wasn't the syntax, it was learning to think in algorithms.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Week 3-5</span>
+                        <h3>Data Structures & Algorithms</h3>
+                        <p>Lists, dictionaries, loops. Started seeing patterns in how data can be organized. The "aha moment" came when I realized a dictionary is just a way to create relationships between data.</p>
+                        <p class="reflection">💭 Reflection: Understanding why each data structure exists matters more than memorizing syntax.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Week 6-8</span>
+                        <h3>Introduction to Modern AI</h3>
+                        <p>Mind-blowing. Started understanding how machine learning works at a conceptual level. Neural networks aren't magic—they're mathematical functions learning from data.</p>
+                        <p class="reflection">💭 Reflection: AI is pattern recognition at scale. The math intimidates me, but the concept makes sense.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Week 9-12</span>
+                        <h3>Data Analysis Fundamentals</h3>
+                        <p>Working with pandas and numpy. Learning to clean data, spot outliers, and ask better questions of datasets. Visualization helps me see stories in numbers.</p>
+                        <p class="reflection">💭 Reflection: Good questions > fancy algorithms. Data science starts with curiosity.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Week 13-15</span>
+                        <h3>First Projects & Integration</h3>
+                        <p>Building small projects to tie everything together. Each one teaches me something new about both the technical work and my learning process.</p>
+                        <p class="reflection">💭 Reflection: Learning happens in the struggle between "I don't know" and "now I understand."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case-Note Style Projects -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Project Case Notes</h2>
+            <p class="section-subtitle">Learning through building—with honest reflections</p>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Student Grade Analyzer</h3>
+                        <span class="project-status">Complete</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-context"><strong>Context:</strong> First major Python project using data structures to analyze student performance patterns.</p>
+                        
+                        <p class="project-challenge"><strong>Challenge:</strong> How do I organize student data efficiently and calculate meaningful statistics?</p>
+                        
+                        <p class="project-approach"><strong>Approach:</strong> Used dictionaries to store student records, lists for grades, and functions to calculate averages. Learned about nested data structures.</p>
+                        
+                        <div class="project-learning">
+                            <strong>What I Learned:</strong>
+                            <ul>
+                                <li>Functions should do one thing well</li>
+                                <li>Data validation matters (garbage in = garbage out)</li>
+                                <li>Writing readable code is harder than writing working code</li>
+                            </ul>
+                        </div>
+                        
+                        <p class="project-reflection"><strong>Reflection:</strong> My first version was a mess—one giant function doing everything. Refactoring taught me more than the initial build. I'm learning that good code is rewritten code.</p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">Statistics</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Weather Data Explorer</h3>
+                        <span class="project-status">Complete</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-context"><strong>Context:</strong> Working with real-world data (Nairobi weather) to practice data cleaning and visualization.</p>
+                        
+                        <p class="project-challenge"><strong>Challenge:</strong> Raw data is messy. Missing values, inconsistent formats, outliers everywhere.</p>
+                        
+                        <p class="project-approach"><strong>Approach:</strong> Used pandas for data cleaning, matplotlib for visualization. Learned to handle missing data and identify patterns.</p>
+                        
+                        <div class="project-learning">
+                            <strong>What I Learned:</strong>
+                            <ul>
+                                <li>80% of data science is cleaning data</li>
+                                <li>Visualization reveals patterns I couldn't see in tables</li>
+                                <li>Domain knowledge matters—understanding weather helped me spot errors</li>
+                            </ul>
+                        </div>
+                        
+                        <p class="project-reflection"><strong>Reflection:</strong> This project made data science real for me. Working with actual messy data is humbling—textbook examples are too clean. I'm learning to be patient with the process.</p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Data Cleaning</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Simple ML Classifier</h3>
+                        <span class="project-status">In Progress</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-context"><strong>Context:</strong> Building my first machine learning model to classify iris flowers—the "hello world" of ML.</p>
+                        
+                        <p class="project-challenge"><strong>Challenge:</strong> Understanding how a computer "learns" from data without being explicitly programmed.</p>
+                        
+                        <p class="project-approach"><strong>Approach:</strong> Using scikit-learn to implement a decision tree classifier. Breaking down each step to understand training, testing, and evaluation.</p>
+                        
+                        <div class="project-learning">
+                            <strong>What I'm Learning:</strong>
+                            <ul>
+                                <li>Train/test split prevents overfitting</li>
+                                <li>Features need to be relevant to the prediction</li>
+                                <li>Accuracy isn't everything—understanding why a model works matters</li>
+                            </ul>
+                        </div>
+                        
+                        <p class="project-reflection"><strong>Reflection:</strong> ML feels like magic until you build one yourself. Then you see it's just smart math. Still struggling with choosing the right features, but that's part of learning.</p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Insights & Reflections -->
+    <section id="ai-insights" class="section ai-insights-section">
+        <div class="container">
+            <h2 class="section-title">Intro to Modern AI: Insights & Reflections</h2>
+            <p class="section-subtitle">What I'm learning about artificial intelligence</p>
+
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-icon">🧠</div>
+                    <h3>What is AI, Really?</h3>
+                    <p>AI isn't a thinking machine—it's a pattern-finding system. Machine learning models learn by finding patterns in data, not by understanding concepts the way humans do.</p>
+                    <p class="insight-reflection"><em>This changed how I think about AI capabilities and limitations. AI is powerful but fundamentally different from human intelligence.</em></p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon">📊</div>
+                    <h3>Data is Everything</h3>
+                    <p>An AI model is only as good as its training data. Biased data = biased AI. Incomplete data = unreliable predictions. The quality and diversity of data matters more than the algorithm.</p>
+                    <p class="insight-reflection"><em>This has ethical implications I'm still processing. Who collects the data? What gets included or excluded?</em></p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon">🔄</div>
+                    <h3>Training vs. Inference</h3>
+                    <p>Training is where the model learns from examples. Inference is where it applies that learning to new data. Understanding this distinction helped me grasp how ML actually works.</p>
+                    <p class="insight-reflection"><em>Like learning math: training is doing practice problems, inference is solving a new problem on the test.</em></p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon">⚖️</div>
+                    <h3>The Bias Problem</h3>
+                    <p>AI systems can perpetuate and amplify human biases present in training data. This isn't just a technical problem—it's a social responsibility issue.</p>
+                    <p class="insight-reflection"><em>As I learn to build AI systems, I need to think critically about their impact on people.</em></p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon">🎯</div>
+                    <h3>Overfitting & Underfitting</h3>
+                    <p>Models can memorize training data (overfitting) or be too simple to capture patterns (underfitting). Finding the balance is an art and science.</p>
+                    <p class="insight-reflection"><em>This mirrors learning itself—memorizing vs. understanding. I'm learning to find that balance in my own studies.</em></p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon">🔮</div>
+                    <h3>Explainability Matters</h3>
+                    <p>Some AI models are "black boxes"—they work, but we can't explain why. For critical applications (healthcare, justice), explainability is crucial.</p>
+                    <p class="insight-reflection"><em>I want to build AI systems I can explain and justify, not just systems that work.</em></p>
+                </div>
+            </div>
+
+            <div class="key-takeaway">
+                <h3>Key Takeaway</h3>
+                <p>AI is a tool, not a solution. The real skill is knowing when to use it, how to use it responsibly, and how to interpret its outputs critically. I'm learning to be thoughtful about the technology, not just technically proficient.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honest Tool Stack -->
+    <section id="tools" class="section tools-section">
+        <div class="container">
+            <h2 class="section-title">My Tool Stack</h2>
+            <p class="section-subtitle">What I'm learning, what I know, what I'm still figuring out</p>
+
+            <div class="tools-grid">
+                <div class="tool-category">
+                    <h3>Programming</h3>
+                    <div class="tool-item">
+                        <div class="tool-header">
+                            <span class="tool-name">Python</span>
+                            <span class="proficiency learning">Learning</span>
+                        </div>
+                        <p>My primary language. Getting comfortable with syntax, data structures, and functions. Still learning best practices and pythonic ways of doing things.</p>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-header">
+                            <span class="tool-name">HTML/CSS</span>
+                            <span class="proficiency comfortable">Comfortable</span>
+                        </div>
+                        <p>Built this portfolio to learn web basics. Understanding structure and styling, but JavaScript still feels foreign.</p>
+                    </div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Data Science</h3>
+                    <div class="tool-item">
+                        <div class="tool-header">
+                            <span class="tool-name">Pandas</span>
+                            <span class="proficiency learning">Learning</span>
+                        </div>
+                        <p>For data manipulation and cleaning. Can handle basic operations, still learning advanced techniques and optimizations.</p>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-header">
+                            <span class="tool-name">NumPy</span>
+                            <span class="proficiency beginner">Beginner</span>
+                        </div>
+                        <p>Arrays and numerical operations. Understand the basics, but still discovering its power.</p>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-header">
+                            <span class="tool-name">Matplotlib</span>
+                            <span class="proficiency learning">Learning</span>
+                        </div>
+                        <p>Creating visualizations. Can make basic plots, learning to make them actually useful and beautiful.</p>
+                    </div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Machine Learning</h3>
+                    <div class="tool-item">
+                        <div class="tool-header">
+                            <span class="tool-name">Scikit-learn</span>
+                            <span class="proficiency beginner">Beginner</span>
+                        </div>
+                        <p>Just getting started with ML algorithms. Following tutorials and understanding the workflow.</p>
+                    </div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Development Tools</h3>
+                    <div class="tool-item">
+                        <div class="tool-header">
+                            <span class="tool-name">VS Code</span>
+                            <span class="proficiency comfortable">Comfortable</span>
+                        </div>
+                        <p>My daily editor. Learning keyboard shortcuts and useful extensions.</p>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-header">
+                            <span class="tool-name">Git</span>
+                            <span class="proficiency learning">Learning</span>
+                        </div>
+                        <p>Version control basics. Can commit, push, pull. Still confused by merge conflicts.</p>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-header">
+                            <span class="tool-name">Jupyter Notebooks</span>
+                            <span class="proficiency comfortable">Comfortable</span>
+                        </div>
+                        <p>Great for exploratory data analysis. Love the interactive workflow.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="honesty-note">
+                <p><strong>Honest truth:</strong> I'm a beginner. These tools still feel overwhelming sometimes. But I'm learning every day, and I'm okay with not knowing everything yet. The goal is progress, not perfection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thinking Artifacts -->
+    <section id="artifacts" class="section artifacts-section">
+        <div class="container">
+            <h2 class="section-title">Thinking Artifacts</h2>
+            <p class="section-subtitle">How I think through problems and concepts</p>
+
+            <div class="artifacts-grid">
+                <div class="artifact-card">
+                    <h3>🤔 Debugging Mindset</h3>
+                    <div class="artifact-content">
+                        <p class="artifact-question">When code breaks, I ask:</p>
+                        <ol>
+                            <li>What did I expect to happen?</li>
+                            <li>What actually happened?</li>
+                            <li>What's the smallest change I can make to test my hypothesis?</li>
+                            <li>What does the error message actually say? (Read it carefully!)</li>
+                        </ol>
+                        <p class="artifact-lesson"><strong>Lesson:</strong> Most bugs are simple. I overcomplicate by assuming the problem is bigger than it is.</p>
+                    </div>
+                </div>
+
+                <div class="artifact-card">
+                    <h3>📝 Concept Mapping</h3>
+                    <div class="artifact-content">
+                        <p class="artifact-question">To understand new concepts, I:</p>
+                        <ul>
+                            <li>Write it in my own words</li>
+                            <li>Connect it to something I already know</li>
+                            <li>Build a tiny example from scratch</li>
+                            <li>Explain it to someone (even if just to myself)</li>
+                        </ul>
+                        <p class="artifact-lesson"><strong>Lesson:</strong> If I can't explain it simply, I don't understand it yet.</p>
+                    </div>
+                </div>
+
+                <div class="artifact-card">
+                    <h3>🔍 Problem Decomposition</h3>
+                    <div class="artifact-content">
+                        <p class="artifact-question">For complex problems, I:</p>
+                        <ol>
+                            <li>Write down what I need to accomplish</li>
+                            <li>Break it into smaller sub-problems</li>
+                            <li>Solve the easiest piece first</li>
+                            <li>Test each piece before moving on</li>
+                            <li>Integrate pieces gradually</li>
+                        </ol>
+                        <p class="artifact-lesson"><strong>Lesson:</strong> Big problems are just many small problems in disguise.</p>
+                    </div>
+                </div>
+
+                <div class="artifact-card">
+                    <h3>💡 Learning from Mistakes</h3>
+                    <div class="artifact-content">
+                        <p class="artifact-question">When I make mistakes, I:</p>
+                        <ul>
+                            <li>Don't just fix it—understand <em>why</em> it was wrong</li>
+                            <li>Document the mistake and the lesson</li>
+                            <li>Look for similar patterns in other code</li>
+                            <li>Remember: mistakes are data points for learning</li>
+                        </ul>
+                        <p class="artifact-lesson"><strong>Lesson:</strong> My best learning moments come from failures, not successes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curiosity Section -->
+    <section id="curiosity" class="section curiosity-section">
+        <div class="container">
+            <h2 class="section-title">Current Curiosities</h2>
+            <p class="section-subtitle">Questions I'm exploring and things I want to learn</p>
+
+            <div class="curiosity-grid">
+                <div class="curiosity-category">
+                    <h3>🔬 Technical Questions</h3>
+                    <ul class="curiosity-list">
+                        <li>How do neural networks actually "learn"? I understand the concept, but the math still feels abstract.</li>
+                        <li>What makes some algorithms faster than others? Time complexity makes sense in theory, but how do I think about it in practice?</li>
+                        <li>How do you choose the right ML algorithm for a problem? There seem to be so many options.</li>
+                        <li>What's the difference between AI, machine learning, and deep learning? (I think I know, but want to understand deeply)</li>
+                    </ul>
+                </div>
+
+                <div class="curiosity-category">
+                    <h3>🌍 Applications & Impact</h3>
+                    <ul class="curiosity-list">
+                        <li>How is AI being used in Kenya and East Africa? What problems are uniquely important here?</li>
+                        <li>Can AI help with climate change prediction? How accurate can weather models become?</li>
+                        <li>How do recommendation systems work? (I use them every day but don't understand them)</li>
+                        <li>What role does data science play in public health and policy?</li>
+                    </ul>
+                </div>
+
+                <div class="curiosity-category">
+                    <h3>🎯 Skills I Want to Develop</h3>
+                    <ul class="curiosity-list">
+                        <li>Build a complete end-to-end ML project (data collection → deployment)</li>
+                        <li>Learn SQL and database management properly</li>
+                        <li>Understand cloud computing and how to deploy models</li>
+                        <li>Get better at communicating technical concepts to non-technical people</li>
+                        <li>Contribute to an open-source project</li>
+                    </ul>
+                </div>
+
+                <div class="curiosity-category">
+                    <h3>📚 Currently Reading/Learning</h3>
+                    <ul class="curiosity-list">
+                        <li>"Python for Data Analysis" by Wes McKinney</li>
+                        <li>Following fast.ai courses (slowly but surely)</li>
+                        <li>Exploring Kaggle competitions to see real-world problems</li>
+                        <li>Reading research papers (very slowly—they're dense!)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="curiosity-cta">
+                <p>If you're working on something interesting in data science or AI, or if you have answers to any of these questions, <a href="#contact">I'd love to hear from you</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intentional Contact -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            
+            <div class="contact-content">
+                <div class="contact-intro">
+                    <p>I'm not looking for a job—I'm a first-semester student just starting out. But I am looking for:</p>
+                    
+                    <ul class="contact-interests">
+                        <li><strong>Learning opportunities:</strong> Mentorship, study groups, project collaborations</li>
+                        <li><strong>Conversations:</strong> If you're working in data science or AI, I'd love to learn from you</li>
+                        <li><strong>Feedback:</strong> On my projects, my thinking, or my learning approach</li>
+                        <li><strong>Community:</strong> Other students or beginners learning similar things</li>
+                    </ul>
+
+                    <p>I respond to thoughtful messages. If you're reaching out, tell me what you're working on or what you'd like to discuss. I'm more interested in learning from conversations than collecting LinkedIn connections.</p>
+                </div>
+
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>Best for: Thoughtful questions, project discussions, mentorship inquiries</p>
+                        <a href="mailto:your.email@student.uonbi.ac.ke" class="contact-link">your.email@student.uonbi.ac.ke</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <p>Best for: Professional networking, staying in touch</p>
+                        <a href="https://linkedin.com/in/your-profile" class="contact-link" target="_blank" rel="noopener">Connect on LinkedIn</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🐙</div>
+                        <h3>GitHub</h3>
+                        <p>Best for: Seeing my code, projects, and learning journey</p>
+                        <a href="https://github.com/IAN-QHAMAU" class="contact-link" target="_blank" rel="noopener">Follow on GitHub</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">𝕏</div>
+                        <h3>Twitter/X</h3>
+                        <p>Best for: Quick thoughts, learning in public, tech discussions</p>
+                        <a href="https://twitter.com/your-handle" class="contact-link" target="_blank" rel="noopener">@your-handle</a>
+                    </div>
+                </div>
+
+                <div class="contact-note">
+                    <p><strong>A note on communication:</strong> I'm a student balancing coursework, projects, and learning. I'll respond, but it might take a few days. I appreciate patience and intentional communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built with curiosity by Ian • First-Year Data Science Student at UON</p>
+            <p class="footer-meta">Last updated: January 2026 • This portfolio evolves as I learn</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
