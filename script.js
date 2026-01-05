@@ -125,27 +125,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ============================================
-    // Timeline Progress Bar
+    // Timeline Progress Tracking (for future enhancements)
     // ============================================
     
-    function updateTimelineProgress() {
-        const timeline = document.querySelector('.timeline');
-        if (!timeline) return;
-        
-        const timelineTop = timeline.offsetTop;
-        const timelineHeight = timeline.offsetHeight;
-        const windowHeight = window.innerHeight;
-        const scrollPosition = window.pageYOffset;
-        
-        const progress = Math.max(0, Math.min(1, 
-            (scrollPosition + windowHeight - timelineTop) / timelineHeight
-        ));
-        
-        timeline.style.setProperty('--timeline-progress', progress);
-    }
-    
-    window.addEventListener('scroll', updateTimelineProgress);
-    updateTimelineProgress();
+    // Reserved for future timeline progress animations
     
     // ============================================
     // Intersection Observer for Stats/Counts
@@ -154,15 +137,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // This could be extended for counting animations if needed
     
     // ============================================
-    // Email Obfuscation (Basic Security)
+    // Email Link Handling (Analytics placeholder)
     // ============================================
     
-    // Simple email protection (replace placeholder in HTML if needed)
-    const emailLinks = document.querySelectorAll('a[href^="mailto:your.email"]');
+    // Track email link clicks for analytics
+    const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
     emailLinks.forEach(link => {
-        // You can update this with actual email handling logic
         link.addEventListener('click', function(e) {
-            // Add analytics or other tracking here if needed
+            trackEvent('Contact', 'Email Click', this.href);
         });
     });
     
