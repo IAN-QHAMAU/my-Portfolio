@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ian Kamau Muthoni - Data Science & Web Development</title>
+  <meta name="description" content="Portfolio of Ian Kamau Muthoni - Data Science student at UoN, EDA projects, frontend development and payment integrations." />
+  <link rel="stylesheet" href="styles/portfolio.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">IK<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name" id="heroName"></h1>
+        <p class="hero-title" id="heroTitle"></p>
+        <p class="hero-subtitle" id="heroSubtitle"></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+        <div class="hero-socials" id="heroSocials"></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-avatar">
+          <div class="avatar-initials">IK</div>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="stat-num">4+</span><span class="stat-label">EDA Projects</span></div>
+          <div class="hero-stat"><span class="stat-num">3</span><span class="stat-label">Client Projects</span></div>
+          <div class="hero-stat"><span class="stat-num">2</span><span class="stat-label">Certifications</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-container">
+      <h2 class="section-title">About me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p id="aboutBio"></p>
+          <div class="about-details">
+            <div class="about-detail"><i class="fas fa-map-marker-alt"></i><span id="aboutLocation"></span></div>
+            <div class="about-detail"><i class="fas fa-envelope"></i><a id="aboutEmail" href=""></a></div>
+            <div class="about-detail"><i class="fas fa-graduation-cap"></i><span>University of Nairobi</span></div>
+          </div>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Data Analysis</h3>
+            <p>Turning messy datasets into clear, actionable insights through rigorous EDA.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fas fa-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Building clean, functional frontends and end-to-end payment integrations.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>Curious by Nature</h3>
+            <p>Always asking why,because understanding the root is how real solutions are built.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Each project uncovers real insights from real data, with live visualisations you can explore.</p>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="featured">Featured</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="section-container">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-list" id="experienceList"></div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container" id="skillsContainer"></div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <div class="section-container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="certifications-grid" id="certificationsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-container">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="section-subtitle">Have a project, a question, or just want to connect? I'm always open to a good conversation.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><a href="mailto:kamauian118@gmail.com">kamauian118@gmail.com</a></div></div>
+          <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>Location</h4><span>Nairobi, Kenya</span></div></div>
+          <div class="contact-item"><i class="fab fa-linkedin"></i><div><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/ian-kamau-80082634a/" target="_blank">ian-kamau</a></div></div>
+          <div class="contact-item"><i class="fab fa-github"></i><div><h4>GitHub</h4><a href="https://github.com/IAN-QHAMAU" target="_blank">IAN-QHAMAU</a></div></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span>Send Message</span><i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-container">
+      <p class="footer-name">Ian Kamau Muthoni</p>
+      <p class="footer-copy">© <span id="footerYear"></span></p>
+      <div class="footer-socials" id="footerSocials"></div>
+    </div>
+  </footer>
+
+  <!-- Certificate Modal -->
+  <div class="modal" id="certificateModal" onclick="closeCertificateModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeCertificateModal()"><i class="fas fa-times"></i></button>
+      <h3 id="modalCertTitle"></h3>
+      <img id="modalCertImage" src="" alt="Certificate" />
+    </div>
+  </div>
+
+  <script src="Js/data.js"></script>
+  <script src="Js/script.js"></script>
+  <script src="Js/main.js"></script>
+</body>
+</html>
