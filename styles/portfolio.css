@@ -238,6 +238,7 @@ a:hover { color: var(--accent); }
 .project-card.visible { opacity: 1; transform: translateY(0); transition: opacity 0.4s ease, transform 0.4s ease, border-color var(--transition); }
 .project-card:hover { border-color: var(--accent); transform: translateY(-4px); }
 .project-card.featured { border-color: rgba(29,158,117,0.3); }
+.project-card.has-live-link { cursor: pointer; }
 .project-content { padding: 24px; }
 .project-title { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
 .project-description { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px; }

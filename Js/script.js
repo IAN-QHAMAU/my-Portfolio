@@ -195,7 +195,7 @@ function createProjectCardHTML(project, index = 0) {
     : "";
 
   return `
-    <div class="project-card ${project.featured ? "featured" : ""}" style="animation-delay: ${index * 0.1}s">
+    <div class="project-card ${project.featured ? "featured" : ""} ${project.liveUrl ? "has-live-link" : ""}" data-live-url="${project.liveUrl || ""}" style="animation-delay: ${index * 0.1}s">
       <div class="project-content">
         <h3 class="project-title">${project.title}</h3>
         <p class="project-description">${project.description}</p>

@@ -50,6 +50,30 @@ function renderProjects(filter) {
   const grid = document.getElementById("projectsGrid");
   const filtered = filter === "featured" ? projects.filter((p) => p.featured) : projects;
   grid.innerHTML = filtered.map((p, i) => createProjectCardHTML(p, i)).join("");
+  initProjectCardInteractions(grid);
+}
+
+function initProjectCardInteractions(grid) {
+  grid.querySelectorAll(".project-card").forEach((card) => {
+    card.classList.add("visible");
+
+    const liveUrl = card.dataset.liveUrl;
+    if (!liveUrl) return;
+
+    card.setAttribute("role", "link");
+    card.setAttribute("tabindex", "0");
+
+    card.addEventListener("click", (event) => {
+      if (event.target.closest("a")) return;
+      window.open(liveUrl, "_blank", "noopener,noreferrer");
+    });
+
+    card.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      window.open(liveUrl, "_blank", "noopener,noreferrer");
+    });
+  });
 }
 
 // Experience
