@@ -97,41 +97,7 @@ function initCertifications() {
 // Contact form
 function initContact() {
   const form = document.getElementById("contactForm");
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    clearErrors();
-
-    const formData = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      subject: document.getElementById("subject").value,
-      message: document.getElementById("message").value,
-    };
-
-    const errors = validateForm(formData);
-
-    if (Object.keys(errors).length > 0) {
-      Object.entries(errors).forEach(([field, msg]) => {
-        const el = document.getElementById(`${field}Error`);
-        if (el) el.textContent = msg;
-      });
-      return;
-    }
-
-    const btn = document.getElementById("submitBtn");
-    btn.disabled = true;
-    btn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
-
-    const result = await sendEmail(formData);
-    const successEl = document.getElementById("formSuccess");
-    successEl.textContent = result.message;
-    successEl.className = result.success ? "form-success show" : "form-error-msg show";
-
-    btn.disabled = false;
-    btn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
-
-    if (result.success) form.reset();
-  });
+  // Formspree handles submission, no JS needed
 }
 
 function clearErrors() {

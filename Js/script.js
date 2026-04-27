@@ -79,32 +79,7 @@ function updateActiveNavLink() {
 
 // Send email via Web3Forms
 async function sendEmail(formData) {
-  const accessKey = "YOUR_WEB3FORMS_ACCESS_KEY";
-  const data = {
-    access_key: accessKey,
-    name: formData.name,
-    email: formData.email,
-    subject: formData.subject,
-    message: formData.message,
-  };
-  try {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-    const result = await response.json();
-    if (result.success) {
-      return { success: true, message: "Message sent! I'll get back to you soon." };
-    } else {
-      throw new Error("Submission failed");
-    }
-  } catch (error) {
-    return {
-      success: false,
-      message: "Failed to send. Please email me directly at kamauian118@gmail.com",
-    };
-  }
+  // No longer used. Formspree handles form submission now.
 }
 
 // Create social link HTML
