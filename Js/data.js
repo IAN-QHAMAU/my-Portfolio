@@ -103,7 +103,7 @@ const certifications = [
     issuer: "Cisco Networking Academy - In Progress",
     issueDate: new Date("2026-04-01"),
     credentialId: "",
-    verificationUrl: "assets/certs/Cisco%20Networking%20Academy_%20Introduction%20to%20Cybersecurity.pdf",
+    verificationUrl: "assets/certs/Intro%20to%20cybersecurity%20knowledge%20check.pdf",
     certificateImage: "",
   },
 ];
