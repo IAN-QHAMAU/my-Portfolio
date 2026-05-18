@@ -34,9 +34,9 @@ const experiences = [
     id: "exp1",
     company: "Roy Ndungu Official",
     role: "Web Developer",
-    duration: "2025 - Present",
+    duration: "2025 - 2026",
     startDate: new Date("2025-01-01"),
-    endDate: null,
+    endDate: new Date("2026-12-31"),
     description: [
       "Building and managing the official website for Roy Ndungu from the ground up",
       "Handling design decisions, content structure, and frontend implementation",
@@ -49,9 +49,9 @@ const experiences = [
     id: "exp2",
     company: "Shee Digital",
     role: "Frontend Developer",
-    duration: "2024 - 2025",
-    startDate: new Date("2024-06-01"),
-    endDate: new Date("2025-01-01"),
+    duration: "2026",
+    startDate: new Date("2026-01-01"),
+    endDate: new Date("2026-12-31"),
     description: [
       "Designed and built a complete landing page for a social media management brand (sheedigital.com)",
       "Translated the client's brand identity into a clean, conversion-focused web presence",
@@ -227,6 +227,18 @@ const projects = [
     liveUrl: "https://sheedigital.com",
     githubUrl: null,
     completionDate: new Date("2024-06-01"),
+    featured: false,
+  },
+  {
+    id: "proj7",
+    title: "Roy Ndungu Foundation Website",
+    description:
+      "Designed and built the official site for Roy Ndungu Foundation, focusing on clear storytelling, impact highlights, and a responsive layout.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    thumbnail: "assets/project7.jpg",
+    liveUrl: "https://www.royndungufoundation.org/",
+    githubUrl: null,
+    completionDate: new Date("2025-02-01"),
     featured: false,
   },
 ];
