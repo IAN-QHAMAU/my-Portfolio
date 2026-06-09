@@ -51,7 +51,7 @@
         <div class="hero-stats">
           <div class="hero-stat"><span class="stat-num">4+</span><span class="stat-label">EDA Projects</span></div>
           <div class="hero-stat"><span class="stat-num">3</span><span class="stat-label">Client Projects</span></div>
-          <div class="hero-stat"><span class="stat-num">2</span><span class="stat-label">Certifications</span></div>
+          <div class="hero-stat"><span class="stat-num" id="certCount">2</span><span class="stat-label">Certifications</span></div>
         </div>
       </div>
     </div>
@@ -184,7 +184,7 @@
     <div class="modal-content" onclick="event.stopPropagation()">
       <button class="modal-close" onclick="closeCertificateModal()"><i class="fas fa-times"></i></button>
       <h3 id="modalCertTitle"></h3>
-      <img id="modalCertImage" src="" alt="Certificate" />
+      <div id="modalCertContent"></div>
     </div>
   </div>
 

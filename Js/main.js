@@ -21,6 +21,11 @@ function initHero() {
   document.getElementById("heroSubtitle").textContent = personalInfo.subtitle;
   const socials = document.getElementById("heroSocials");
   socials.innerHTML = socialLinks.map(createSocialLinkHTML).join("");
+  const certCountEl = document.getElementById("certCount");
+  if (certCountEl) {
+    const visibleCount = certifications.filter((c) => !/entry exam/i.test(c.name)).length;
+    certCountEl.textContent = visibleCount;
+  }
 }
 
 // About

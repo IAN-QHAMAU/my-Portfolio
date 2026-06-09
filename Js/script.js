@@ -119,9 +119,21 @@ function createCertificationCardHTML(cert, index = 0) {
   const verifyLink = cert.verificationUrl
     ? `<a href="${cert.verificationUrl}" target="_blank" rel="noopener noreferrer" class="certification-verify">Verify Credential</a>`
     : "";
-  const hasImage = cert.certificateImage && cert.certificateImage !== "";
+
+  const isPdf = cert.certificateImage && cert.certificateImage.toLowerCase().endsWith(".pdf");
+  const hasImage = cert.certificateImage && cert.certificateImage !== "" && !isPdf;
+
+  // PDFs should open in a new tab; images open in the modal
   const clickHandler = hasImage
     ? `onclick="openCertificateModal('${cert.certificateImage}', '${cert.name}')"`
+    : isPdf
+    ? `onclick="window.open('${cert.certificateImage}', '_blank', 'noopener,noreferrer')"`
+    : "";
+
+  const hint = hasImage
+    ? '<div class="view-certificate-hint">🔍 Click to view certificate</div>'
+    : isPdf
+    ? '<div class="view-certificate-hint">🔗 Click to open PDF</div>'
     : "";
 
   return `
@@ -129,7 +141,7 @@ function createCertificationCardHTML(cert, index = 0) {
       <div class="certification-name">${cert.name}</div>
       <div class="certification-issuer">${cert.issuer}</div>
       <div class="certification-date">${formatDate(cert.issueDate)}</div>
-      ${hasImage ? '<div class="view-certificate-hint">🔍 Click to view certificate</div>' : ""}
+      ${hint}
       ${verifyLink}
     </div>
   `;
@@ -184,11 +196,21 @@ function createProjectCardHTML(project, index = 0) {
 // Open certificate modal
 function openCertificateModal(imagePath, certName) {
   const modal = document.getElementById("certificateModal");
-  const modalImg = document.getElementById("modalCertImage");
+  const modalContent = document.getElementById("modalCertContent");
   const modalTitle = document.getElementById("modalCertTitle");
-  if (modal && modalImg && modalTitle) {
-    modalImg.src = imagePath;
+  if (modal && modalContent && modalTitle) {
     modalTitle.textContent = certName;
+    modalContent.innerHTML = "";
+    if (imagePath) {
+      const lower = imagePath.toLowerCase();
+      if (lower.endsWith(".pdf")) {
+        modalContent.innerHTML = `<iframe src="${imagePath}" frameborder="0" class="modal-cert-iframe"></iframe>`;
+      } else {
+        modalContent.innerHTML = `<img src="${imagePath}" alt="${certName}" />`;
+      }
+    } else {
+      modalContent.innerHTML = `<p>No preview available</p>`;
+    }
     modal.style.display = "flex";
     requestAnimationFrame(() => modal.classList.add("show"));
     document.body.style.overflow = "hidden";
@@ -198,10 +220,12 @@ function openCertificateModal(imagePath, certName) {
 // Close certificate modal
 function closeCertificateModal() {
   const modal = document.getElementById("certificateModal");
+  const modalContent = document.getElementById("modalCertContent");
   if (modal) {
     modal.classList.remove("show");
     setTimeout(() => {
       modal.style.display = "none";
+      if (modalContent) modalContent.innerHTML = "";
     }, 200);
     document.body.style.overflow = "";
   }
