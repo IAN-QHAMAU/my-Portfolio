@@ -1,6 +1,6 @@
 // Personal Information
 const personalInfo = {
-  name: "Ian Kamau Muthoni",
+  name: "Ian Kamau",
   title: "Data Science Student",
   subtitle: "1st Year | University of Nairobi · Bachelor in Data Science",
   bio: "Data Science student at the University of Nairobi. Curious by default, and more interested in problems that leave a mark than ones that just look good solved. I turn raw data into insights people can actually act on, and I build on the web too: from landing pages to end-to-end payment integrations. Still early in the journey, still trying to get each project a little more right than the last.",
