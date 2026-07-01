@@ -3,7 +3,7 @@ const personalInfo = {
   name: "Ian Kamau Muthoni",
   title: "Data Science Student",
   subtitle: "1st Year | University of Nairobi · Bachelor in Data Science",
-  bio: "Data Science student at the University of Nairobi who asks a lot of 'why' questions, sometimes too many, but that's how I learn best. I turn raw data into ready-to-apply insights through exploratory analysis, and I build on the web too: from landing pages to end-to-end payment integrations. Passionate about using data to solve real, everyday problems.",
+  bio: "Data Science student at the University of Nairobi. Curious by default, and more interested in problems that leave a mark than ones that just look good solved. I turn raw data into insights people can actually act on, and I build on the web too: from landing pages to end-to-end payment integrations. Still early in the journey, still trying to get each project a little more right than the last.",
   email: "kamauian118@gmail.com",
   location: "Nairobi, Kenya",
   profileImage: "assets/ian.svg",
