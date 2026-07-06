@@ -3,7 +3,7 @@ const personalInfo = {
   name: "Ian Kamau",
   title: "Data Science Student",
   subtitle: "1st Year | University of Nairobi · Bachelor in Data Science",
-  bio: "Data Science student at the University of Nairobi. Curious by default, and more interested in problems that leave a mark than ones that just look good solved. I turn raw data into insights people can actually act on, and I build on the web too: from landing pages to end-to-end payment integrations. Still early in the journey, still trying to get each project a little more right than the last.",
+  bio: "Data Science student at the University of Nairobi. Curious by default, and drawn to challenges that demand both critical thinking and practical execution. I enjoy stepping into uncertainty and turning complex problems into solutions that people can actually use, whether through web development or data-driven work.I thrive in collaborative environments, stay composed under pressure, and value clear communication as much as technical ability. I believe the best work is built by people who are willing to learn continuously, adapt quickly, and challenge one another to raise the standard.For me, every project is more than another item in a portfolio—it's an opportunity to sharpen my craft, broaden my perspective, and create something with lasting value.",
   email: "kamauian118@gmail.com",
   location: "Nairobi, Kenya",
   profileImage: "assets/ian.svg",
